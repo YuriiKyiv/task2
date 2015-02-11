@@ -7,24 +7,33 @@
 //
 
 #include <stdio.h>
+#include <assert.h>
 
 #define genHere(type, spec) \
-void MyOutput_##type(type value) { \
+type MyOutput_##type(type value) { \
     printf(spec, value); \
+    return value; \
 } \
 
 #define MyOutputValue(type, value) \
 MyOutput_##type(value); \
 
 genHere( int, "%d" );
+genHere( long, "%ld" );
 genHere( char, "%c" );
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     printf("Hello, World!\n");
-    MyOutput_int(12);
-    MyOutput_char("a");
+    
+    
     MyOutputValue(int, 15)
     MyOutputValue(char,"b")
+    
+    assert(12 == MyOutput_int(12));
+    assert(100500 == MyOutput_long(100500));
+    assert("c" == MyOutput_char("c"));
+    
     return 0;
 }
+
