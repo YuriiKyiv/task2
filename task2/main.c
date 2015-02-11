@@ -8,8 +8,15 @@
 
 #include <stdio.h>
 
+#define genHere( type, spec ) \
+void MyOutput_##type(type value ) { \
+    printf(spec, value); \
+} \
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     printf("Hello, World!\n");
     return 0;
 }
+
+genHere( int, "%d" );
