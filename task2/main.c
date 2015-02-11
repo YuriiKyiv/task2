@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include <assert.h>
 
-#define genHere(type, spec) \
+#define MyValueGenerete(type, spec) \
 type MyOutput_##type(type value) { \
     printf(spec, value); \
     return value; \
@@ -18,14 +18,13 @@ type MyOutput_##type(type value) { \
 #define MyOutputValue(type, value) \
 MyOutput_##type(value); \
 
-genHere( int, "%d" );
-genHere( long, "%ld" );
-genHere( char, "%c" );
+MyValueGenerete( int, "%d" );
+MyValueGenerete( long, "%ld" );
+MyValueGenerete( char, "%c" );
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     printf("Hello, World!\n");
-    
     
     MyOutputValue(int, 15)
     MyOutputValue(char,"b")
