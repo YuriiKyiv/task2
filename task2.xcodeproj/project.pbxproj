@@ -29,7 +29,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5A6D84C41A8B439E0080BB2C /* task2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = task2; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A6D84C41A8B439E0080BB2C /* task2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = task2; path = /Users/yurii/Documents/study/task2/task2/build/Debug/task2; sourceTree = "<absolute>"; };
 		5AE909BF1A8CB0110008E224 /* Task3.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Task3.xcodeproj; path = Task3/Task3.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,16 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				5AE909BF1A8CB0110008E224 /* Task3.xcodeproj */,
-				5A6D84C51A8B439E0080BB2C /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		5A6D84C51A8B439E0080BB2C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5A6D84C41A8B439E0080BB2C /* task2 */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		5AE909C01A8CB0110008E224 /* Products */ = {
@@ -110,7 +101,7 @@
 				en,
 			);
 			mainGroup = 5A6D84BB1A8B439E0080BB2C;
-			productRefGroup = 5A6D84C51A8B439E0080BB2C /* Products */;
+			productRefGroup = 5A6D84BB1A8B439E0080BB2C;
 			projectDirPath = "";
 			projectReferences = (
 				{

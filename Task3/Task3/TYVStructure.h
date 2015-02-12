@@ -35,7 +35,8 @@ struct TYVBasicStucture {
     
     char *char1;
     
-    
 };
+
+typedef struct TYVBasicStucture TYVBasicStucture;
 
 #endif /* defined(__Task3__TYVStructure__) */
