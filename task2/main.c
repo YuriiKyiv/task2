@@ -9,29 +9,29 @@
 #include <stdio.h>
 #include <assert.h>
 
-#define MyValueGenerete(type, spec) \
-type MyOutput_##type(type value) { \
+#define TYVValueGenerete(type, spec) \
+type TYVOutput_##type(type value) { \
     printf(spec, value); \
     return value; \
 } \
 
-#define MyOutputValue(type, value) \
-MyOutput_##type(value); \
+#define TYVOutputValue(type, value) \
+TYVOutput_##type(value); \
 
-MyValueGenerete( int, "%d" );
-MyValueGenerete( long, "%ld" );
-MyValueGenerete( char, "%c" );
+TYVValueGenerete( int, "%d" );
+TYVValueGenerete( long, "%ld" );
+TYVValueGenerete( char, "%c" );
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     printf("Hello, World!\n");
     
-    MyOutputValue(int, 15)
-    MyOutputValue(char,"b")
+    TYVOutputValue(int, 15)
+    TYVOutputValue(char,'c')
     
-    assert(12 == MyOutput_int(12));
-    assert(100500 == MyOutput_long(100500));
-    assert("c" == MyOutput_char("c"));
+    assert(12 == TYVOutput_int(12));
+    assert(100500 == TYVOutput_long(100500));
+    assert('c'== TYVOutput_char('c'));
     
     return 0;
 }
