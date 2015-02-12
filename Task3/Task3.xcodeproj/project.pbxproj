@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A1DAC311A8CC7B8008B8DA6 /* TYVStructure.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A1DAC2F1A8CC7B8008B8DA6 /* TYVStructure.c */; };
 		5AE909B91A8CB0110008E224 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 5AE909B81A8CB0110008E224 /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5A1DAC2F1A8CC7B8008B8DA6 /* TYVStructure.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TYVStructure.c; sourceTree = "<group>"; };
+		5A1DAC301A8CC7B8008B8DA6 /* TYVStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYVStructure.h; sourceTree = "<group>"; };
 		5AE909B51A8CB0110008E224 /* Task3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Task3; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AE909B81A8CB0110008E224 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				5AE909B81A8CB0110008E224 /* main.c */,
+				5A1DAC2F1A8CC7B8008B8DA6 /* TYVStructure.c */,
+				5A1DAC301A8CC7B8008B8DA6 /* TYVStructure.h */,
 			);
 			path = Task3;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AE909B91A8CB0110008E224 /* main.c in Sources */,
+				5A1DAC311A8CC7B8008B8DA6 /* TYVStructure.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +238,7 @@
 				5AE909BE1A8CB0110008E224 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
